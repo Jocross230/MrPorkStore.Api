@@ -96,10 +96,12 @@ builder.Services
 // CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("Frontend", policy =>
+    options.AddPolicy("ProductionCors", policy =>
     {
         policy
-            .WithOrigins("http://localhost:8443")
+            .WithOrigins(
+                "https://mr-pork-store-gn79leb8u-josi-tech.vercel.app"
+            )
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
