@@ -117,7 +117,7 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-app.UseCors("Frontend");
+app.UseCors("ProductionCors");
 
 app.UseAuthentication();
 app.UseAuthorization();
