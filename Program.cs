@@ -100,6 +100,7 @@ builder.Services.AddCors(options =>
     {
         policy
             .WithOrigins(
+                "https://mr-pork-store.vercel.app",
                 "https://mr-pork-store-gn79leb8u-josi-tech.vercel.app"
             )
             .AllowAnyHeader()
